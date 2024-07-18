@@ -185,4 +185,5 @@ function printFabonacci(n) {
     return az;
 }
 
-console.log(printFabonacci(15));
+console.log(`Fabonacci Sequence : ${printFabonacci(15)}`);
+
