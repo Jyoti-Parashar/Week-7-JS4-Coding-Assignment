@@ -1,15 +1,22 @@
+
 //Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
-
-
 
 let ages=[ 3, 9, 23, 64, 2, 8, 28, 93]
 console.log(`first element in the array=${ages[ages.length-ages.length]}`);
 console.log(`last element in the array=${ages[ages.length-1]}`);
-console.log(`Programmatically the difference of the first element in the array from the last element of the array=${ages[ages.length-1]-ages[ages.length-ages.length]}`)
+console.log(`Programmatically the difference of the 
+    first element in the array from the 
+    last element of the array=
+    ${ages[ages.length-1]-ages[ages.length-ages.length]}`)
 //Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of different lengths).
 ages.push(78);
-console.log(`Programmatically the difference of the first element in the array from the last element of the array=${ages[ages.length-1]-ages[ages.length-ages.length]}`)
-//Use a loop to iterate through the array and calculate the average age.
+console.log(`Programmatically the difference of the 
+    first element in the array from 
+    the last element of the array=
+    ${ages[ages.length-1]-ages[ages.length-ages.length]}`)
+
+    //Use a loop to iterate through the array and 
+    //calculate the average age.
 
 let avg=0;
 for (let index = 0; index < ages.length; index++) {
@@ -19,20 +26,23 @@ for (let index = 0; index < ages.length; index++) {
 
 console.log(`Average age=${avg/ages.length}`)
 
-//Use a loop to iterate through the array and calculate the average number of letters per name.
+//Use a loop to iterate through the array and 
+//calculate the average number of letters per name.
 
 let names=['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']
 let avgletters=0;
 names.forEach(element => {     
     avgletters=(avgletters+element.length);
 });
-console.log(`the average number of letters per name=${avgletters/names.length}`);
+console.log(`the average number of letters per name
+    =${avgletters/names.length}`);
 
 
 
 //Use a loop to iterate through the array again and concatenate all the names together, separated by spaces.
 
-console.log(`concatenate all the names together, separated by spaces:`);
+console.log(`concatenate all the names together, 
+    separated by spaces:`);
 names.forEach(element => {
    
     console.log( names.join(" "));
@@ -66,7 +76,8 @@ nameLengths.forEach(element => {
 });
 
 
-console.log(` the sum of all the elements in the array nameLengths=${sum}`);
+console.log(`the sum of all the elements in the array 
+    nameLengths=${sum}`);
 
 //Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. 
 //(i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').
@@ -164,7 +175,7 @@ function willBuyDrink(isHotOutside,moneyInPocket) {
     }
 }
 
-console.log(`result is ${willBuyDrink(true,12.5)}`);
+console.log(`Hot outside: ${willBuyDrink(true,12.5)}`);
 
 //Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
 
